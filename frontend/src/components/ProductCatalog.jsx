@@ -5,7 +5,7 @@ const ProductCatalog = () => {
 const [products, setProducts] = useState([]);
 
 useEffect(() => {
-  fetch("http://localhost:5000/api/products")
+  fetch("https://kapil-thakur-24bcs80042-shoppings.onrender.com/api/products")
     .then(res => res.json())
     .then(data => setProducts(data))
     .catch(err => console.error(err));
